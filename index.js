@@ -10,7 +10,6 @@ const userSchema = new Schema
 
 const userModel = model("User", userSchema)
 
-
 // SCHEMA POST
 
 const postSchema = new Schema
@@ -22,8 +21,6 @@ const postSchema = new Schema
     });
 
 const postModel = model("Post", postSchema)
-
-
 
 // DATEN ERSTELLEN (User)
 
@@ -81,7 +78,6 @@ const post6 = await postModel.create({
     inhalt: "Inhalt des Posts 6",
     author: userThree._id,
 });
-
 
 // await post1.save()
 
